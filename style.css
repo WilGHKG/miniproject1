@@ -1,0 +1,6 @@
+.bg-wrapper {
+    background-image: url('images/bg_logo.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
