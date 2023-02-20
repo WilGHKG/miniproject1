@@ -9,46 +9,53 @@
     <!-- bootstrap css -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link href="bootstrap/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-wrapper">
+  <div class="bg-wrapper">
     <!-- Header-->
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <img src="marcid_blue_logo.png" alt="Bootstrap" width="50" height="50">
-              <li><a href="index.html" class="nav-link px-3 text-primary">Home</a></li>
-              <li><a href="about.html" class="nav-link px-3 text-primary">About Us</a></li>
-              <li><a href="product.html" class="nav-link px-3 text-primary">Product</a></li>
-              <li><a href="storelocator.html" class="nav-link px-3 text-primary">Store Locator</a></li>
-              <li><a href="contact.html" class="nav-link px-3 text-primary">Contact Us</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg justify-content-center bg-primary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <img src="marcid_blue_logo.png" alt="Bootstrap" width="70" height="70">
+              <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+              <li><a href="about.html" class="nav-link px-2 text-white">About Us</a></li>
+              <li><a href="product.html" class="nav-link px-2 text-white">Product</a></li>
+              <li><a href="storelocator.html" class="nav-link px-2 text-white">Store Locator</a></li>
+              <li><a href="contact.html" class="nav-link px-2 text-white">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success text-bg-success" type="submit">Search</button>
+          </form>
         </div>
-    </header>   
+      </div>
+    </nav>
    
-  <!--Content here-->
-  <div class="container-fluid">
-    <div id="burger" class="row">
-  </div>
-  <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="images/img-products.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3 text-primary">WATER IS A NATURAL MEDICATION TO THE WEARY SPIRIT.</h1>
-        <h1 class="display-5 fw-italic lh-1 mb-3 text-primary">-DRINK MARCID BLUE</h1>
-
+    <!--Content here-->
+    <!--Drink Marcid Blue-->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="images/img-products.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3 text-primary">WATER IS A NATURAL MEDICATION TO THE WEARY SPIRIT.</h1>
+          <h1 class="display-5 fst-italic lh-1 mb-3 text-black">-DRINK MARCID BLUE</h1>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          </div>
         </div>
       </div>
-    </div>
-  </div>  
-  <!--Footer-->
+    </div> 
+  
+    <!--Footer-->
     <div class="container">
       <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -58,13 +65,26 @@
           <li class="nav-item"><a href="storelocator.html" class="nav-link px-3 text-black">Store Locator</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link px-3 text-black">Contact Us</a></li>
         </ul>
-        <p class="text-center text-black">© 2023 Marcid Blue</p>
+      
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="about.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img src="marcid_blue_logo.png" alt="Bootstrap" width="70" height="70">
+            </a>
+            <span class="mb-3 mb-md-0 text-black">© 2023 Marcid Blue</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-decoration-none" href="https://twitter.com/MarcidBluePH" class="twitter"><i class="bi bi-twitter"></i></a>
+            <li class="ms-3"><a class="text-decoration-none" href="https://www.facebook.com/marcid.blue" class="facebook"><i class="bi bi-facebook"></i></a>
+            <li class="ms-3"><a class="text-decoration-none" href="https://www.instagram.com/marcidblue/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <li class="ms-3"><a class="text-decoration-none" href="contact.html" class="telephone"><i class="bi bi-telephone"></i>    
+          </ul>
+        </footer>
       </footer>
     </div>
-  </div> 
 
-  <!--bootstrap script-->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="custom.js"></script>
+    <!--bootstrap script-->
+    <script src="bootstrap/js/bootstrap.min.js"></script> 
 </body>
 </html>
